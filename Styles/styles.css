@@ -1,16 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
-*{
-  width: 99%;
-  height: 100%;
-}
-.container{
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+.container {
   width: 98%;
   height: 98%;
   margin-left: 26px;
   background-color: white;
 }
 /* NAVBAR STYLES START */
-.nav-bar{
+.nav-bar {
   width: 1700px;
   height: 150px;
   margin-left: 70px;
@@ -19,11 +15,11 @@
   justify-content: space-between;
   background-color: #fff;
 }
-.nav-logo{
+.nav-logo {
   margin-left: 9px;
   background-color: #fff;
 }
-.ma-3connect-logo{
+.ma-3connect-logo {
   height: 85px;
   width: 95px;
   padding: 5px;
@@ -33,90 +29,175 @@
 }
 .nav * {
   box-sizing: border-box;
-  transition: all .35s ease;
-    
-
+  transition: all 0.35s ease;
 }
-.nav-ul{
+.nav-ul {
   margin-left: 400px;
   width: 400px;
-  font-family: 'Titillium Web';
- 
-
+  font-family: "Titillium Web";
 }
 .nav-links ul li {
   width: 10px;
   height: 40px;
   display: inline;
-  
 }
 
 .nav-ul a {
   padding: 20px 25px;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
   position: relative;
   color: #000;
   text-decoration: none;
   font-size: 20px;
-  }
-  
+}
+
 .nav-ul a::before,
 .nav-ul a::after {
-  content: '';
+  content: "";
   height: 14px;
   width: 14px;
   position: absolute;
-  transition: all .35s ease;
+  transition: all 0.35s ease;
   opacity: 0;
 }
-  
+
 .nav-ul a::before {
-  content: '';
+  content: "";
   right: 0;
   top: 0;
   border-top: 3px solid #e89005;
   border-right: 3px solid #ffba08;
   transform: translate(-100%, 50%);
 }
-  
+
 .nav-ul a:after {
-  content: '';
+  content: "";
   left: 0;
   bottom: 0;
   border-bottom: 3px solid #ffba08;
   border-left: 3px solid #e89005;
-  transform: translate(100%, -50%)
+  transform: translate(100%, -50%);
 }
-  
+
 .nav-ul a:hover:before,
-.nav-ul a:hover:after{
-  transform: translate(0,0);
+.nav-ul a:hover:after {
+  transform: translate(0, 0);
   opacity: 1;
 }
-  
+
 .nav-ul a:hover {
   color: #ffb703;
 }
 /* NAVBAR STYLES END */
 
 /* MAIN TEXT STYLES */
-h1{
+h1 {
   width: 1200px;
   height: 100px;
   font-size: 100px;
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   justify-content: center;
   /* margin-left: 630px; */
-
 }
-.main-text h1{
+.main-text {
+  height: 280px;
+}
+.main-text h1 {
   margin-left: 600px;
 }
-hr{
+hr {
   width: 1500px;
   height: 2px;
   background-color: black;
   margin-left: 150px;
 }
 
-/* MAIN TEXT END */
+/* MAIN TEXT STYLES END */
+
+/* HOMEPAGE IMAGE START */
+.homepageimage-container {
+  height: 900px;
+  width: 1800px;
+  justify-content: space-between;
+}
+.homepageimage-holder {
+  height: 850px;
+  width: 1680px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+.The mask {
+  border-radius: 55%;
+}
+/* HOMEPAGE IMAGE END */
+
+/* FORM STYLES START */
+.form {
+  height: 750px;
+  width: 800px;
+  margin-left: 150px;
+  border: 12px solid rgba(0, 0, 0, 0.02);
+}
+form {
+  margin-left: 20px;
+}
+label {
+  display: block;
+  margin-top: 0px;
+  font-family: "Titillium Web";
+  font-weight: bold;
+}
+input[type="text"] {
+  width: 70%;
+  font-size: 16px;
+  padding: 4px 10px;
+  margin: 1px 0px;
+  font-family: "Titillium Web";
+  transition: width 0.4s ease-in-out;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+input[type="text"]:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+h2 {
+  padding-top: 40px;
+  color: #ffc300;
+  font-family: "Titillium Web";
+  font-weight: bold;
+  font-size: 23px;
+  margin-left: 50px;
+}
+.reserve-button {
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #ffd60a, #ffc300);
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: "Titillium Web";
+  margin-left: 130px;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.form-text {
+  font-family: "Titillium Web";
+  margin-left: 140px;
+}
+/* FORM STYLES END */
