@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
 .container {
-  width: 98%;
+  max-width: 98%;
   height: 98%;
   margin-left: 26px;
   background-color: white;
+  position: relative;
+  overflow-x: hidden;
+
 }
 /* NAVBAR STYLES START */
 .nav-bar {
-  width: 1700px;
+  width: 40%;
   height: 150px;
   margin-left: 70px;
   display: flex;
@@ -36,12 +39,14 @@
   width: 400px;
   font-family: "Titillium Web";
 }
+.nav-links{
+  margin-left: 300px;
+}
 .nav-links ul li {
   width: 10px;
   height: 40px;
   display: inline;
 }
-
 .nav-ul a {
   padding: 20px 25px;
   color: rgba(255, 255, 255, 0.5);
@@ -92,7 +97,7 @@
 
 /* MAIN TEXT STYLES */
 h1 {
-  width: 1200px;
+  width: 70%;
   height: 100px;
   font-size: 100px;
   font-family: "Titillium Web";
@@ -100,48 +105,68 @@ h1 {
   /* margin-left: 630px; */
 }
 .main-text {
-  height: 280px;
+  height: 170px;
+  justify-content: center;
 }
 .main-text h1 {
-  margin-left: 600px;
+  width: 50%;
+  margin-left: 30%;
+  float: none;
+  justify-content: center;
 }
 hr {
-  width: 1500px;
+  width: 82%;
   height: 2px;
   background-color: black;
-  margin-left: 150px;
+  margin-left: 120px;
 }
 
 /* MAIN TEXT STYLES END */
 
 /* HOMEPAGE IMAGE START */
 .homepageimage-container {
-  height: 900px;
-  width: 1800px;
+  height: 820px;
+  width: 130%;
   justify-content: space-between;
+  margin-left: 74px;
+  margin-top: 30px;
 }
 .homepageimage-holder {
   height: 850px;
-  width: 1680px;
+  width: 86%;
   display: flex;
   align-items: center;
+  border-radius: 5px;
   position: absolute;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+
 }
-.The mask {
-  border-radius: 55%;
+.homepageimage-holder:hover {
+  transform: scale(1.00); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+.The-mask {
+  border-radius: 5px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin-left: 10px;
+}
+.The-mask:hover {
+  transform: scale(1.00); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
 }
 /* HOMEPAGE IMAGE END */
 
 /* FORM STYLES START */
 .form {
   height: 750px;
-  width: 800px;
-  margin-left: 150px;
-  border: 12px solid rgba(0, 0, 0, 0.02);
+  width: 35%;
+  margin-left: 50px;
+
 }
-form {
-  margin-left: 20px;
-}
+
 label {
   display: block;
   margin-top: 0px;
@@ -205,7 +230,7 @@ h2 {
 /* SERVICES SECTION STYLES START */
 .services-header{
   display: flex;
-  width: 1800px;
+  width: 280%;
   height: 200px;
 }
 .services-header1{
@@ -222,23 +247,25 @@ h2 {
 }
 .services-container{
   width: 98%;
-  height: 80%;
+  height: 130%;
+  overflow: hidden;
+
 }
 .services-cards-container{
-  width: 91%;
+  width: 99%;
   margin-left: 1px;
   display: flex;
 }
 .service-card1{
-  width: 800px;
+  width: 55%;
   height: 380px;
   display: flex;
-  margin-left: 80px;
+  margin-left: 40px;
   margin-top: 40px;
   /* background: #6c757d; */
 }
 .servicecard1-container{
-  width: 800px;
+  width: 100%;
   background:#edede9;
   display: flex;
   border: 5%;
@@ -246,7 +273,7 @@ h2 {
   margin-left: 0px;
 }
 .airport-transfer-image{
-  width: 380px;
+  width: 300px;
   height: 280px;
   margin-top: 53px;
   margin-left: 50px;
@@ -254,8 +281,8 @@ h2 {
   border-radius: 4%;
 }
 .airport-transfer-texts{
-  width: 370px;
-  height: 170px;
+  width: 300px;
+  height: 250px;
   display: block;
   margin-left: 30px;
   font-size: 18px;
@@ -267,22 +294,23 @@ h2 {
   margin-top: 20px;
 }
 .service-card2{
-  width: 800px;
+  width: 55%;
   height: 380px;
   display: flex;
   /* background: #6c757d; */
-  margin-left: 80px;
+  margin-left: 40px;
   margin-top: 40px;
 }
 .service-card2-container{
+  width: 100%;
+  background:#edede9;
   display: flex;
-  width: 800px;
-  background: #edede9;
   border: 5%;
   border-radius: 4%;
+  margin-left: 0px;
 }
 .intercity-trips-image{
-  width: 380px;
+  width: 300px;
   height: 280px;
   margin-top: 53px;
   margin-left: 50px;
@@ -290,8 +318,8 @@ h2 {
   border-radius: 4%;
 }
 .intercity-trips-texts{
-  width: 360px;
-  height: 170px;
+  width: 300px;
+  height: 250px;
   display: block;
   margin-left: 30px;
   font-size: 18px;
@@ -309,29 +337,30 @@ h2 {
   margin-top: 40px;
 }
 .services-cards-container2{
-  width: 91%;
-  margin-left: 15px;
+  width: 99%;
+  margin-left: 1px;
   display: flex;
 }
 
 .service-card3{
-  width: 800px;
+  width: 70%;
   height: 380px;
   display: flex;
   /* background: #6c757d; */
-  margin-left: 80px;
+  margin-left: 40px;
   margin-top: 40px;
 }
 
 .service-card3-container{
   display: flex;
-  width: 800px;
+  width: 100%;
   background: #edede9;
   border: 5%;
   border-radius: 4%;
+  margin-left: 1px;
 }
 .brand-promotion-image{
-  width: 380px;
+  width: 300px;
   height: 280px;
   margin-top: 53px;
   margin-left: 50px;
@@ -339,8 +368,8 @@ h2 {
   border-radius: 4%;
 }
 .brand-promotion-texts{
-  width: 370px;
-  height: 170px;
+  width: 300px;
+  height: 250px;
   display: block;
   margin-left: 30px;
   font-size: 18px;
@@ -353,23 +382,23 @@ h2 {
 }
 
 .service-card4{
-  width: 800px;
+  width: 95%;
   height: 380px;
   display: flex;
   /* background: #6c757d; */
-  margin-left: 80px;
+  margin-left: 40px;
   margin-top: 40px;
 }
 
 .service-card4-container{
   display: flex;
-  width: 800px;
+  width: 100%;
   background: #edede9;
   border: 5%;
   border-radius: 4%;
 }
 .wedding-services-image{
-  width: 380px;
+  width: 300px;
   height: 280px;
   margin-top: 53px;
   margin-left: 50px;
@@ -377,8 +406,8 @@ h2 {
   border-radius: 4%;
 }
 .wedding-services-texts{
-  width: 370px;
-  height: 170px;
+  width: 300px;
+  height: 250px;
   display: block;
   margin-left: 30px;
   font-size: 18px;
@@ -390,4 +419,283 @@ h2 {
   margin-top: 20px;
 }
 /* SERVICES SECTION STYLES END */
+
+/* OUR FLEET START */
+.fleet-header{
+  display: flex;
+  width: 1800px;
+  height: 200px;
+}
+.fleet-header1{
+  width: 500px;
+  margin-left: 340px;
+  font-size: 96px;
+}
+.fleet-mini-header{ 
+  margin-top: 120px;
+  width: 500px;
+  font-family: 'Titillium Web';
+  font-weight: 600;
+  color: #6c757d;
+}
+
+/* FLEET CARDS START */
+.fleet-cards-container{
+  width: 1800px;
+  height: 500px;
+  gap: 40px;
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 50px;
+
+}
+.fleet-cards{
+  display: flex;
+  gap: 40px;
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+  width: 200%;
+  margin: auto;
+  /* animation: slide 20s linear infinite; */
+  /* margin-right: 1500px; */
+  font-family: 'Titillium Web';
+  font-weight: 300;
+  border: 5%;
+  border-radius: 15px;
+  /* width: 100%; */
+  padding: 50px;
+  overflow: scroll;
+}
+.fleet-cards :hover{
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+
+}
+.lauren-family{
+  width: 250px;
+  height: 230px;
+  padding: 10px;
+  border: 5%;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.pimp-my-ride{
+  width: 250px;
+  height: 230px;
+  padding: 10px;
+  border: 5%;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.The-Matrix{
+  width: 250px;
+  height: 230px;
+  padding: 10px;
+  border: 5%;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.chryslar-limo{
+  width: 250px;
+  height: 230px;
+  padding: 10px;
+  border: 5%;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.dodge{
+  width: 250px;
+  height: 230px;
+  padding: 10px;
+  border: 5%;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.red-car{
+  width: 250px;
+  height: 230px;
+  padding: 10px;
+  border: 5%;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.volkswagen-van{
+  width: 250px;
+  height: 230px;
+  padding: 10px;
+  border: 5%;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+.car-container {
+  width: 300px;
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  background-color: white;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2px;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.car-container:hover {
+  transform: scale(1.01); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+}
+.car-container button {
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 250px;
+  font-size: 18px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  border: 5%;
+  border-radius: 15px;
+}
+.car-container button:hover {
+  opacity: 0.9;
+}
+
+.car-container p {
+  text-align: center;
+  border: 5%;
+  border-radius: 15px;
+  transform: none;
+  transition: none;
+}
+.car-container h3 {
+  text-align: center;
+  border: 5%;
+  border-radius: 15px;
+  transform: none;
+  transition: none;
+}
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-calc((300px + 40px) * 7)); /* Adjust for number of cards */
+  }
+}
+
+
+/* FLEET CARDS END */
+
+/* OUR FLEET END */
+
+/* FOOTER STYLES START */
+.footer-container{
+  max-width: 1670px;
+  /* background-color: red; */
+  margin: auto;
+  font-family: 'Titillium Web';
+  margin-left: 350px;
+  margin-top: 50px;
+}
+ul{
+  list-style: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.footer-column{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-column h4{
+  font-size: 22px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-column h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ffc300;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-column ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-column ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-column ul li a:hover{
+  color: black;
+  padding-left: 8px;
+}
+.footer-column .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin-right: 10px;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: black;
+  transition: all 0.3s ease;
+}
+.footer-column .social-links a:hover{
+  color: black;
+  background-color: #ffffff;
+}
+.footer{
+  /* background-color: #24262b; */
+  padding: 70px 0;
+  width: 80%;
+}
+
+.click{
+background-color: #e89005;
+color: red;
+border: none;
+border-radius: 5px;
+box-shadow: 3px 3px gray;
+padding: 2px;
+height: 8%;
+width: 15%;
+margin-top: 300px;
+min-height: 30px;
+min-width: 60px;
+
+}
+
+.click:hover {
+ background-color: #ffd60a;
+ transition: 0.8s;
+}
+
+.click:focus{
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 4px #6c757d;
+  transition: 0.8s;
+}
+
+.click:active{
+  background-color: aquamarine;
+  transition: 0.1s;
+}
+/* FOOTER STYLES END */
 
