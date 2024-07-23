@@ -171,7 +171,7 @@ hr {
 .form {
   height: 750px;
   width: 35%;
-  margin-left: 50px;
+  margin-left: 120px;
 
 }
 
@@ -212,7 +212,7 @@ h2 {
   font-family: "Titillium Web";
   font-weight: bold;
   font-size: 23px;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 .reserve-button {
   cursor: pointer;
@@ -735,8 +735,14 @@ min-width: 60px;
   .main-text h1{
     float: none;
     width: 70%;
-    margin-left: 200px;
+    margin-left: 20px;
     font-weight: 600;
+    margin-top: 2px;
+  }
+  .nav-ul{
+    margin: 0;
+    float: none;
+    margin-top: 4px;
   }
   .The-mask{
     height: 94%;
@@ -763,7 +769,7 @@ min-width: 60px;
     margin: 0;
     float: none;
     width: 60%;
-    margin-left: 50px;
+    margin-left: 120px;
   }
   .form h2{
     margin: 0;
@@ -797,6 +803,9 @@ min-width: 60px;
   .services-mini-header{
     margin-top: 120px;
   }
+  .services-container{
+    margin-left: 35px;
+  }
   .services-cards-container{
     width: 100%;
     display: flex;
@@ -809,7 +818,9 @@ min-width: 60px;
   .service-card1{
     margin: 0;
     float: none;
-    width: 100%;
+    width: 45%;
+    margin-top: 40px;
+
   }
   .airport-transfer-image{
     width: 45%;
@@ -826,7 +837,96 @@ min-width: 60px;
 
   .services-cards-container2{
     display: inline-flex;
+    width: 100%;
   }
+  .service-card2{
+    width: 46%;
+  }
+  .intercity-trips-texts{
+    width: 50%;
+    margin: 0;
+    float: none;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .intercity-trips-image{
+    width: 45%;
+    height: 75%;
+    margin-left: 25px;
+  }
+  .service-card3 {
+    margin: 0;
+    float: none;
+    width: 46%;
+    margin-top: 40px;
+
+  }
+  .brand-promotion-texts{
+    width: 50%;
+    margin: 0;
+    float: none;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .brand-promotion-image{
+    width: 45%;
+    height: 75%;
+    margin-left: 25px;
+  }
+  .service-card4 {
+    margin: 0;
+    float: none;
+    width: 47%;
+    margin-top: 40px;
+    margin-left: 40px;
+
+  }
+  .wedding-services-image{
+    width: 45%;
+    height: 75%;
+    margin-left: 25px;
+  }
+  .wedding-services-texts{
+    width: 50%;
+    margin: 0;
+    float: none;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+
+  .fleet-header{
+    margin: 0;
+    float: none;
+    width: 98%;
+  }
+  .fleet-header1{
+    width: 35%;
+    margin: 0;
+    float: none;
+    margin-top: 40px;
+    margin-left: 240px;
+  }
+  .fleet-mini-header{
+    margin-top: 120px;
+    margin-left: 5px;
+    width: 40%;
+  }
+  .fleet-cards button{
+    width: 80%;
+  }
+  .footer-container{
+    width: 100%;
+    margin: 0;
+    float: none;
+    margin-top: 70px;
+    margin-left: 220px;
+  }
+  .row{
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
