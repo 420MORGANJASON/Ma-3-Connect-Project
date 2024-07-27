@@ -120,11 +120,11 @@ h1 {
   font-weight: 900;
 } */
 hr {
-  width: 82%;
+  width: 58%;
   height: 2px;
   margin-top: 2px;
   background-color: black;
-  margin-left: 1px;
+  margin-left: 0px;
 }
 
 /* MAIN TEXT STYLES END */
@@ -260,6 +260,7 @@ h2 {
   width: 98%;
   height: 130%;
   overflow: hidden;
+  margin-left: 150px;
 
 }
 .services-cards-container{
@@ -268,7 +269,7 @@ h2 {
   display: flex;
 }
 .service-card1{
-  width: 55%;
+  width: 40%;
   height: 380px;
   display: flex;
   margin-left: 40px;
@@ -306,7 +307,7 @@ h2 {
   margin-top: 20px;
 }
 .service-card2{
-  width: 55%;
+  width: 40%;
   height: 380px;
   display: flex;
   /* background: #6c757d; */
@@ -356,7 +357,7 @@ h2 {
 }
 
 .service-card3{
-  width: 70%;
+  width: 40.8%;
   height: 380px;
   display: flex;
   /* background: #6c757d; */
@@ -396,7 +397,7 @@ h2 {
 }
 
 .service-card4{
-  width: 95%;
+  width: 40.6%;
   height: 380px;
   display: flex;
   /* background: #6c757d; */
@@ -1147,25 +1148,29 @@ min-width: 60px;
 
  @media screen and (max-width: 480px) {
    .main-text{
-     width: 305%;
+     width: 100%;
      margin: 0;
+     float: none;
+     margin-left: 0px;
    }
+   .main-text h1{
+    float: none;
+    margin: 0;
+    justify-content: center;
+    width: 99%;
+    margin-left: 0px;
+  }
    .nav-links{
      float: none;
      margin: 0;
      position: relative;
-     margin-left: 780px;
+     margin-left: 0px;
    }
    .nav-links ul{
-     margin-left: -60px;
+     margin-left: 0px;
+     gap: 0;
    }
-   .main-text h1{
-     float: none;
-     margin: 0;
-     justify-content: center;
-     width: 50%;
-     margin-left: 340px;
-   }
+
    hr{
      margin-top: 30px;
    }
