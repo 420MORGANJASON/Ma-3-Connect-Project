@@ -96,6 +96,23 @@
 .nav-ul a:hover {
   color: #ffb703;
 }
+.toggle-button{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+ }
+ .toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+
+ }
 /* NAVBAR STYLES END */
 
 /* MAIN TEXT STYLES */
@@ -465,7 +482,6 @@ h2 {
   display: flex;
   box-sizing: border-box;
   margin-top: 50px;
-
 }
 .fleet-cards{
   display: flex;
@@ -568,7 +584,7 @@ h2 {
   cursor: pointer;
   width: 250px;
   font-size: 18px;
-  margin-left: 25px;
+  margin-left: 56px;
   margin-bottom: 10px;
   border: 5%;
   border-radius: 15px;
@@ -1160,42 +1176,85 @@ min-width: 60px;
     width: 99%;
     margin-left: 0px;
   }
+   .toggle-button{
+    display: flex;
+   }
    .nav-links{
-     float: none;
-     margin: 0;
-     position: relative;
-     margin-left: 0px;
+    display: none;
+    width: 100%;
+    flex-direction: column;
+   }
+   .nav-bar{
+    flex-direction: column;
+    align-items: flex-start;
    }
    .nav-links ul{
-     margin-left: 0px;
-     gap: 0;
+    width: 100%;
+    flex-direction: column;
+   }
+   .nav-links li{
+    text-align: center;
    }
 
+   .nav-links li a{
+    padding: .5rem 1rem;
+   }
+   .nav-links.active{
+    display: flex;
+   }
    hr{
      margin-top: 30px;
    }
    .homepageimage-container{
      width: 80%;
      float: none;
+     display: block;
     }
     .homepageimage-holder{
      width: 270%;
      margin-top: 5%;
+     display: block;
     }
     .The-mask{
-     width: 46%;
-     margin: 2px;
+     width: 40%;
+     margin: 0;
+     float: none;
+     margin-left: 0px;
     }
     .form{
      width:40%;
-     margin-left: 80px;
+     height: 280px;
+     margin-left: 0px;
+     margin-top: 0px;.service-card1{
+      width: 49.5%;
     }
-    .services-container{
-     width: 300%;
+    }
+    .reserve-button{
+      margin-left: 130px;
+    }
+    .form-text{
+      margin-left: 145px;
+    }
+    .ma-3connect-services{
+     width: 100%;
      display: block;
      float: none;
-     height: 1500px;
-     list-style: none;
+     margin-top: 700px;
+     height: 2000px;
+    }
+    .services-header1{
+      margin: 0;
+      float: none;
+      margin-top: 60px;
+    }
+    .services-mini-header{
+      margin: 0;
+      float: none;
+      margin-top: 70px;
+    }
+    .services-container{
+      margin: 0;
+      float: none;
     }
     .services-cards-container{
      float: none;
@@ -1204,13 +1263,152 @@ min-width: 60px;
      justify-content: center;
      width: 100%;
      padding: 10px 15px;
+     margin-left: -40px;
     }
-    .servicecard1-container{
-     width: 200%;
+    .service-card1{
+     width: 42%;
      height: 100%;
-     margin-left: 150px;
+     margin: 0;
+     float: none; 
+     margin-top: 140px;
+     margin-left: -10px;
+    }
+    .service-card1-container{
+      height: 90%;
+    }
+    .services-cards-container img{
+      width: 40%;
+      height: 70%;
+      margin-top: 70px;
+    }
+    .airport-transfer-texts{
+      width: 90%;
+      height: 90%;
+      margin-top: 0;
+    }
+    .services-cards2-container{
+      display: block;
+      width: 80%;
+      height: 100%;
+    }
+    .service-card2{
+      margin-left: 32px;
+      width: 38%;
+      height: 100%;
+    }
+    .services-cards-container2 img{
+      width: 40%;
+      height: 70%;
+      margin: 0;
+      float: none;
+      margin-left: 30px;
+      margin-top: 60px;
+    }
+    .intercity-trips-texts{
+      float: none;
+      margin: 0;
+      width: 70%;
+      height: 90%;
+      margin-top: 0;
+      margin-left: 20px;
+    }
+    .services-cards-container2{
+      display: block;
+      height: 80%;
+      margin: 0;
+      float: none;
+    }
+    .service-card3-container{
+      display: flex;
+      width: 2%;
+      height: 95%;
+      margin: 0;
+      float: none;
+      margin-left: 10px;
+    }
+    .service-card3{
+      margin-left: 0px;
+      display: flex;
+      width: 1920%;
+      height: 25%;
+    }
+    img.brand-promotion-image{
+      margin: 0;
+      float: none;
+      width: 40%;
+      height: 65%;
+      margin-left: 30px;
+      margin-top: 60px;
+    }
+
+    .brand-promotion-texts{
+      margin: 0;
+      float: none;
+      margin-left: 20px;
+      margin-top: -4px;
+
+
+    }
+    .service-card4-container{
+      margin: 0;
+      float: none;
+      margin-left: 4px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+    .service-card4{
+      width: 39%;
+      float: none;
+      margin: 0;
+      margin-left: 5px;
+      margin-top: 40px;
+      display: flex;
+      height: 24.5%;
+
+    }
+    .wedding-services-texts{
+      margin: 0;
+      float: none;
+      margin-left: 20px;
+    }
+    .wedding-services-image{
+      margin: 0;
+      float: none;
+      margin-left: 120px;
+      height: 80%;
+    }
+    .fleet-header1{
+      width: 100%;
+      margin: 0;
+      float: none;
+      margin-left: 6px;
+    }
+    .fleet-mini-header{
+      margin: 0;
+      float: none;
+      margin-top: 40px;
+    }
+    .fleet-cards button{
+      margin: 0;
+      float: none;
+      margin-top: -50px;
+      margin-left: 18px;
+      height: 45px;
+      text-align: center;
+      cursor: pointer;
+      border: 2%;
+      border-radius: 15px;
+      padding: 12px;
+    }
+    .car-container{
+      height: 105%;
     }
     .footer{
-     width: 240%;
+     width: 250%;
+     margin: 0;
+     float: none;
+     margin-left: -10px;
     }
+
  }      
